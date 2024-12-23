@@ -9,13 +9,12 @@ public class Main {
             System.out.print(num);
         } else {
             for(int i = 1; i < num; i++) {
-            if(N % i == 0 && M % i == 0) {
-                answer = i;
+                if(N % i == 0 && M % i == 0) {
+                    answer = i;
+                }
             }
+            System.out.print(answer);
         }
-        }
-
-        System.out.print(answer);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
