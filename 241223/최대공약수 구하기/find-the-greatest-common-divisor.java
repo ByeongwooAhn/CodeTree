@@ -8,7 +8,7 @@ public class Main {
         if(num == 1) {
             System.out.print(num);
         } else {
-            for(int i = 1; i < num; i++) {
+            for(int i = 1; i <= num; i++) {
                 if(N % i == 0 && M % i == 0) {
                     answer = i;
                 }
