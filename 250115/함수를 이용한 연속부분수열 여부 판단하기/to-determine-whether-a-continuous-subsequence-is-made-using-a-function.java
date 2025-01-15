@@ -7,7 +7,7 @@ public class Main {
             return false;
         }
 
-        for(int i = 0; i <= B.length; i++) {
+        for(int i = 0; i < B.length; i++) {
             if(Arrays.equals(Arrays.copyOfRange(A, i, i + B.length), B)) {
                 return true;
             }
