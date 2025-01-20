@@ -6,8 +6,12 @@ public class Main {
         if(M < 1 || 12 < M) {
             return false;
         }
+        else if(Y % 4 == 0 && Y % 100 == 0) {
+            return D <= day[M];
+        }
         else if(Y % 4 == 0 || (Y % 4 == 0 && Y % 100 == 0 && Y % 400 == 0)) {
             day[2] = 29;
+
             return D <= day[M];
         } else {
             return D <= day[M];
